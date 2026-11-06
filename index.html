@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tilework – Privacy Policy</title>
+<meta name="description" content="Privacy policy of Tilework, a daily logic puzzle game for iOS and Android.">
+<style>
+  :root {
+    --wall: #D5E3DC; --grout: #C3D4CB; --tile: #FFFFFF; --bevel: #B7C9BF; --ink: #1D2A25; --muted: #56665F;
+    --saffron: #D29400; --terracotta: #C2452C; --cobalt: #2B56B5; --link: #2B56B5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --wall: #0E1C17; --grout: #16291F; --tile: #182A23; --bevel: #07110D; --ink: #E7F0EA; --muted: #9DB2A8;
+      --saffron: #E8AE2A; --terracotta: #E0694F; --cobalt: #7D9BE8; --link: #9DB5F2;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; color: var(--ink);
+    font: 16px/1.6 "Avenir Next", Avenir, "Segoe UI", system-ui, -apple-system, sans-serif;
+    background-color: var(--wall);
+    background-image:
+      linear-gradient(var(--grout) 2px, transparent 2px),
+      linear-gradient(90deg, var(--grout) 2px, transparent 2px);
+    background-size: 56px 56px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 16px 56px; }
+  .tile {
+    background: var(--tile); border-radius: 10px; padding: 18px 20px;
+    box-shadow: inset 0 -4px 0 var(--bevel), 0 1px 0 rgba(0, 0, 0, .06);
+  }
+  header.tile { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+  .mark { display: flex; gap: 4px; }
+  .mark i { width: 18px; height: 18px; border-radius: 4px; box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .22); }
+  .mark i:nth-child(1) { background: var(--saffron); }
+  .mark i:nth-child(2) { background: var(--terracotta); }
+  .mark i:nth-child(3) { background: var(--cobalt); }
+  .brand { font-weight: 700; font-size: 20px; letter-spacing: .01em; margin-right: auto; }
+  nav { display: flex; gap: 6px; }
+  nav a {
+    display: grid; place-items: center; width: 44px; height: 44px; border-radius: 8px;
+    color: var(--ink); text-decoration: none; font-weight: 700; font-size: 14px; letter-spacing: .04em;
+    background: var(--wall); box-shadow: inset 0 -3px 0 var(--bevel);
+  }
+  nav a[aria-current="true"] { background: var(--cobalt); color: #fff; box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .3); }
+  h1 { font-size: 30px; line-height: 1.2; margin: 28px 4px 4px; letter-spacing: -.01em; }
+  .date { margin: 0 4px 18px; color: var(--muted); font-size: 14px; }
+  .glance { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 10px; }
+  .glance .tile { padding: 14px 16px; border-top: 6px solid var(--saffron); }
+  .glance .tile:nth-child(2) { border-top-color: var(--terracotta); }
+  .glance .tile:nth-child(3) { border-top-color: var(--cobalt); }
+  .glance .tile:nth-child(4) { border-top-color: var(--muted); }
+  .glance b { display: block; font-size: 15px; }
+  .glance span { color: var(--muted); font-size: 14px; line-height: 1.45; display: block; }
+  section.lang > .tile { margin-top: 10px; }
+  h2 { font-size: 18px; margin: 0 0 6px; }
+  p { margin: 0 0 10px; }
+  p:last-child, ul:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 10px; padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  .path { font-weight: 600; white-space: nowrap; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 24px; }
+  html.js section.lang[hidden] { display: none; }
+  @media (max-width: 480px) {
+    .glance { grid-template-columns: 1fr; }
+    h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="tile">
+  <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>
+  <span class="brand">Tilework</span>
+  <nav aria-label="Language">
+    <a href="#en" hreflang="en" lang="en" title="English">EN</a>
+    <a href="#pl" hreflang="pl" lang="pl" title="Polski">PL</a>
+    <a href="#de" hreflang="de" lang="de" title="Deutsch">DE</a>
+    <a href="#es" hreflang="es" lang="es" title="Español">ES</a>
+  </nav>
+</header>
+
+<!-- ============================== EN ============================== -->
+<section class="lang" id="en" lang="en" data-title="Tilework – Privacy Policy">
+  <h1>Privacy Policy</h1>
+  <p class="date">Tilework for iPhone and Android · in effect from 6 November 2026</p>
+  <div class="glance">
+    <div class="tile"><b>No account</b><span>You never give us a name, an email address or a password.</span></div>
+    <div class="tile"><b>Your wall stays on your phone</b><span>Boards, results and settings are stored on the device. We run no server.</span></div>
+    <div class="tile"><b>Ads come from Google</b><span>The Google Mobile Ads SDK handles the ads and the data they need.</span></div>
+    <div class="tile"><b>Payments go through the store</b><span>Apple or Google process Premium. We never see payment details.</span></div>
+  </div>
+
+  <div class="tile">
+    <h2>Who is responsible</h2>
+    <p>Tilework is made by JaworIT Daniel Jaworski, the data controller. Write to <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a> with any privacy question.</p>
+  </div>
+
+  <div class="tile">
+    <h2>What the app keeps on your phone</h2>
+    <ul>
+      <li>puzzles you have started: your marks or path, the time, hints and checks used;</li>
+      <li>the results of each day's set, your streak, statistics, rank and badges;</li>
+      <li>which Play-mode puzzles you have already had, so they don't come back too soon;</li>
+      <li>settings: language, sound, haptics, board options, whether the reminder is on and its hour;</li>
+      <li>small counters: when and how often the app offered the reminder, the last day you finished a set, when the last full-screen ad was shown;</li>
+      <li>whether Premium is active;</li>
+      <li>a spare copy of the save and, if a save ever cannot be read, that unreadable copy, so nothing is lost.</li>
+    </ul>
+    <p>None of this is sent to us or to anyone else. Clearing the app's data or uninstalling it deletes it. Tilework contains no analytics and no crash-reporting tools, and it does not show or link to other apps.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Ads (Google AdMob)</h2>
+    <p>The free game shows a banner under the board, now and then a full-screen ad when you leave a solved puzzle, and videos that you start yourself for an extra hint, check or streak save. The ads come from Google through the Google Mobile Ads SDK. When an ad is requested, the SDK may collect and send to Google:</p>
+    <ul>
+      <li>device identifiers: the advertising identifier (IDFA on iPhone, only if you allow tracking; the Android advertising ID) and the app set ID;</li>
+      <li>your IP address and the approximate location derived from it;</li>
+      <li>interactions with ads, such as views and taps;</li>
+      <li>diagnostic and performance data, such as launch times and SDK errors.</li>
+    </ul>
+    <p>Google uses this data to deliver and measure ads, for analytics and to prevent fraud. It is encrypted in transit. More: <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Your consent to ads</h2>
+    <p>In the European Economic Area, the UK and Switzerland, Google's consent form (UMP) appears when the app starts, before any ad is requested. You can accept personalised ads, refuse them or choose in detail; without consent the ads are not personalised. Change your choice at any time in <span class="path">Settings › Privacy › Ad privacy choices</span> (the row is there wherever the consent form applies). The legal basis is your consent (Art. 6(1)(a) GDPR) or, for non-personalised ads and fraud prevention, our legitimate interest (Art. 6(1)(f) GDPR).</p>
+  </div>
+
+  <div class="tile">
+    <h2>Tracking on iPhone</h2>
+    <p>Right after the consent form (or at the first start, where there is none), iOS asks whether Tilework may track you. Google receives the IDFA only if you allow it, and every puzzle plays the same if you don't. You can change this in iOS <span class="path">Settings › Privacy &amp; Security › Tracking</span>. On Android you can reset or delete the advertising ID in the system settings.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Daily reminder</h2>
+    <p>The reminder is a local notification that your phone schedules itself: no push service, no token, nothing sent anywhere. It is on by default, but the system only asks for permission after you tap "Yes, remind me" in the app (offered after you solve a puzzle) or turn it on in Settings. On iPhone, earlier reminders may arrive quietly in Notification Center. You get at most one a day, at the hour you choose, none on days you have finished the set, and they stop after a week if you don't open the app. Switch it off in the app's Settings or in the system settings.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Premium</h2>
+    <p>Premium is a one-time in-app purchase handled by Apple (App Store) or Google (Google Play), under their privacy policies. The app only learns whether the purchase is active, keeps that on your phone and asks the store again at launch, so a refund or a restore is reflected. We never see your payment details.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Children</h2>
+    <p>Tilework is not directed at children under 13, and we do not knowingly collect their data. If you think a child has given us data, write to us and we will help.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Your rights</h2>
+    <p>Under the GDPR you have the right to access, rectify, erase and restrict data and to object. We hold no data about you on any server, so there is nothing for us to hand over or delete; the data on your phone is yours to delete. For ad data you can withdraw consent in the app, reset your advertising ID or use Google's tools. You may also complain to a data protection authority; in Poland that is the President of the Personal Data Protection Office (UODO).</p>
+  </div>
+
+  <div class="tile">
+    <h2>Changes</h2>
+    <p>A new version of this policy will be published on this page with a new date. Significant changes will also be mentioned in the app or in the update notes.</p>
+  </div>
+</section>
+
+<!-- ============================== PL ============================== -->
+<section class="lang" id="pl" lang="pl" data-title="Tilework – Polityka prywatności">
+  <h1>Polityka prywatności</h1>
+  <p class="date">Tilework na iPhone’a i Androida · obowiązuje od 6 listopada 2026</p>
+  <div class="glance">
+    <div class="tile"><b>Bez konta</b><span>Nie podajesz nam imienia, adresu e-mail ani hasła.</span></div>
+    <div class="tile"><b>Twoja ściana zostaje w telefonie</b><span>Plansze, wyniki i ustawienia są zapisane na urządzeniu. Nie mamy serwera.</span></div>
+    <div class="tile"><b>Reklamy dostarcza Google</b><span>Reklamy i potrzebne do nich dane obsługuje Google Mobile Ads SDK.</span></div>
+    <div class="tile"><b>Płatności przez sklep</b><span>Premium obsługuje Apple lub Google. Nie widzimy danych płatniczych.</span></div>
+  </div>
+
+  <div class="tile">
+    <h2>Kto odpowiada</h2>
+    <p>Tilework tworzy JaworIT Daniel Jaworski, administrator danych. Pytania o prywatność: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Co aplikacja trzyma w telefonie</h2>
+    <ul>
+      <li>rozpoczęte łamigłówki: Twoje znaczniki lub ścieżkę, czas, użyte podpowiedzi i sprawdzenia;</li>
+      <li>wyniki zestawów dnia, serię, statystyki, rangę i odznaki;</li>
+      <li>które plansze z trybu Graj już się pojawiły, żeby nie wracały za szybko;</li>
+      <li>ustawienia: język, dźwięk, wibracje, opcje planszy, czy przypomnienie jest włączone i o której;</li>
+      <li>małe liczniki: kiedy i ile razy aplikacja proponowała przypomnienie, ostatni dzień ułożonego zestawu, kiedy pokazała ostatnią reklamę pełnoekranową;</li>
+      <li>czy Premium jest aktywne;</li>
+      <li>zapasową kopię zapisu, a jeśli zapisu kiedyś nie da się odczytać, także tę nieczytelną kopię, żeby nic nie przepadło.</li>
+    </ul>
+    <p>Nic z tego nie trafia do nas ani do nikogo innego. Usuniesz te dane, czyszcząc dane aplikacji lub ją odinstalowując. Tilework nie zawiera narzędzi analitycznych ani do raportowania awarii i nie pokazuje innych aplikacji ani linków do nich.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Reklamy (Google AdMob)</h2>
+    <p>Wersja darmowa pokazuje baner pod planszą, czasem reklamę pełnoekranową, gdy wychodzisz z rozwiązanej planszy, oraz filmy, które włączasz sam po dodatkową podpowiedź, sprawdzenie lub uratowanie serii. Reklamy dostarcza Google przez Google Mobile Ads SDK. Przy pobieraniu reklamy SDK może zbierać i przesyłać do Google:</p>
+    <ul>
+      <li>identyfikatory urządzenia: identyfikator reklamowy (IDFA na iPhonie, tylko jeśli zezwolisz na śledzenie; identyfikator reklamowy Androida) i identyfikator zestawu aplikacji;</li>
+      <li>adres IP i wyliczoną z niego przybliżoną lokalizację;</li>
+      <li>interakcje z reklamami, np. wyświetlenia i dotknięcia;</li>
+      <li>dane diagnostyczne i o wydajności, np. czas uruchomienia i błędy SDK.</li>
+    </ul>
+    <p>Google używa tych danych do wyświetlania i mierzenia reklam, analityki oraz zapobiegania oszustwom. Są szyfrowane w trakcie przesyłania. Więcej: <a href="https://policies.google.com/technologies/partner-sites?hl=pl">jak Google wykorzystuje informacje z aplikacji partnerów</a> i <a href="https://policies.google.com/privacy?hl=pl">Polityka prywatności Google</a>.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Zgoda na reklamy</h2>
+    <p>W Europejskim Obszarze Gospodarczym, Wielkiej Brytanii i Szwajcarii formularz zgody Google (UMP) pojawia się przy starcie aplikacji, zanim zostanie pobrana jakakolwiek reklama. Możesz przyjąć reklamy spersonalizowane, odrzucić je lub wybrać szczegółowo; bez zgody reklamy nie są personalizowane. Decyzję zmienisz w każdej chwili w <span class="path">Ustawienia › Prywatność › Ustawienia prywatności reklam</span> (ta pozycja jest wszędzie tam, gdzie obowiązuje formularz zgody). Podstawą jest Twoja zgoda (art. 6 ust. 1 lit. a RODO) lub, w zakresie reklam niespersonalizowanych i zapobiegania oszustwom, nasz prawnie uzasadniony interes (art. 6 ust. 1 lit. f RODO).</p>
+  </div>
+
+  <div class="tile">
+    <h2>Śledzenie na iPhonie</h2>
+    <p>Zaraz po formularzu zgody (albo przy pierwszym starcie, jeśli formularza nie ma) iOS pyta, czy Tilework może Cię śledzić. Google dostaje IDFA tylko wtedy, gdy się zgodzisz, a każda łamigłówka działa tak samo, jeśli odmówisz. Zmienisz to w <span class="path">Ustawienia › Prywatność i ochrona › Śledzenie</span> systemu iOS. Na Androidzie identyfikator reklamowy zresetujesz lub usuniesz w ustawieniach systemu.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Codzienne przypomnienie</h2>
+    <p>Przypomnienie to lokalne powiadomienie, które planuje sam telefon: bez usługi push, bez tokenu, nic nie jest nigdzie wysyłane. Jest domyślnie włączone, ale system prosi o zgodę dopiero wtedy, gdy dotkniesz w aplikacji „Tak, przypominaj” (propozycja pojawia się po rozwiązaniu planszy) albo włączysz je w Ustawieniach. Na iPhonie wcześniejsze przypomnienia mogą trafiać po cichu do Centrum powiadomień. Dostajesz najwyżej jedno dziennie, o wybranej godzinie, żadnego w dni z ułożonym zestawem, a jeśli nie otwierasz aplikacji, po tygodniu przestają przychodzić. Wyłączysz je w Ustawieniach aplikacji lub systemu.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Premium</h2>
+    <p>Premium to jednorazowy zakup w aplikacji obsługiwany przez Apple (App Store) lub Google (Google Play) na ich zasadach prywatności. Aplikacja dowiaduje się tylko, czy zakup jest aktywny, zapisuje to w telefonie i przy starcie pyta sklep ponownie, żeby uwzględnić zwrot lub przywrócenie. Nie widzimy Twoich danych płatniczych.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Dzieci</h2>
+    <p>Tilework nie jest skierowany do dzieci poniżej 13 lat i świadomie nie zbieramy ich danych. Jeśli uważasz, że dziecko przekazało nam dane, napisz do nas, a pomożemy.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Twoje prawa</h2>
+    <p>RODO daje Ci prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania i sprzeciwu. Nie trzymamy o Tobie żadnych danych na serwerze, więc nie mamy czego przekazać ani usunąć; dane w telefonie usuniesz sam. W sprawie danych reklamowych możesz wycofać zgodę w aplikacji, zresetować identyfikator reklamowy lub skorzystać z narzędzi Google. Możesz też złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych (UODO).</p>
+  </div>
+
+  <div class="tile">
+    <h2>Zmiany</h2>
+    <p>Nową wersję tej polityki opublikujemy na tej stronie z nową datą. O istotnych zmianach wspomnimy też w aplikacji lub w opisie aktualizacji.</p>
+  </div>
+</section>
+
+<!-- ============================== DE ============================== -->
+<section class="lang" id="de" lang="de" data-title="Tilework – Datenschutzerklärung">
+  <h1>Datenschutzerklärung</h1>
+  <p class="date">Tilework für iPhone und Android · gültig ab 6. November 2026</p>
+  <div class="glance">
+    <div class="tile"><b>Kein Konto</b><span>Du gibst uns weder Namen noch E-Mail-Adresse noch Passwort.</span></div>
+    <div class="tile"><b>Deine Wand bleibt auf dem Handy</b><span>Bretter, Ergebnisse und Einstellungen liegen auf dem Gerät. Wir betreiben keinen Server.</span></div>
+    <div class="tile"><b>Werbung kommt von Google</b><span>Das Google Mobile Ads SDK liefert die Werbung und verarbeitet die nötigen Daten.</span></div>
+    <div class="tile"><b>Bezahlt wird über den Store</b><span>Apple oder Google wickeln Premium ab. Zahlungsdaten sehen wir nie.</span></div>
+  </div>
+
+  <div class="tile">
+    <h2>Verantwortlich</h2>
+    <p>Tilework stammt von JaworIT Daniel Jaworski, dem Verantwortlichen im Sinne der DSGVO. Fragen zum Datenschutz: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Was die App auf deinem Handy speichert</h2>
+    <ul>
+      <li>angefangene Rätsel: deine Markierungen oder deinen Pfad, die Zeit, benutzte Tipps und Prüfungen;</li>
+      <li>die Ergebnisse der Tagessets, deine Serie, Statistiken, Rang und Abzeichen;</li>
+      <li>welche Rätsel aus dem Modus Spielen du schon hattest, damit sie nicht zu bald wiederkommen;</li>
+      <li>Einstellungen: Sprache, Ton, Vibration, Brett-Optionen, ob die Erinnerung an ist und zu welcher Stunde;</li>
+      <li>kleine Zähler: wann und wie oft die App die Erinnerung angeboten hat, der letzte Tag mit fertigem Set, wann die letzte Vollbildwerbung lief;</li>
+      <li>ob Premium aktiv ist;</li>
+      <li>eine Ersatzkopie des Spielstands und, falls ein Spielstand einmal unlesbar ist, diese unlesbare Kopie, damit nichts verloren geht.</li>
+    </ul>
+    <p>Nichts davon wird an uns oder an andere gesendet. Löschst du die App-Daten oder die App, ist es weg. Tilework enthält keine Analyse- und keine Absturzberichts-Tools und zeigt keine anderen Apps und keine Links darauf.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Werbung (Google AdMob)</h2>
+    <p>Die Gratisversion zeigt ein Banner unter dem Brett, gelegentlich eine Vollbildwerbung, wenn du ein gelöstes Rätsel verlässt, und Videos, die du selbst startest, für einen zusätzlichen Tipp, eine Prüfung oder die Serienrettung. Die Werbung liefert Google über das Google Mobile Ads SDK. Beim Anfordern einer Anzeige kann das SDK an Google senden:</p>
+    <ul>
+      <li>Gerätekennungen: die Werbe-ID (IDFA auf dem iPhone, nur wenn du Tracking erlaubst; die Android-Werbe-ID) und die App-Set-ID;</li>
+      <li>deine IP-Adresse und den daraus abgeleiteten ungefähren Standort;</li>
+      <li>Interaktionen mit Anzeigen, etwa Aufrufe und Tipps;</li>
+      <li>Diagnose- und Leistungsdaten, etwa Startzeiten und SDK-Fehler.</li>
+    </ul>
+    <p>Google nutzt diese Daten, um Werbung auszuliefern und zu messen, für Analysen und zur Betrugsabwehr. Die Übertragung ist verschlüsselt. Mehr: <a href="https://policies.google.com/technologies/partner-sites?hl=de">wie Google Daten aus Apps von Partnern verwendet</a> und die <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a>.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Deine Einwilligung zur Werbung</h2>
+    <p>Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz erscheint beim Start der App das Einwilligungsformular von Google (UMP), bevor eine Anzeige angefordert wird. Du kannst personalisierte Werbung annehmen, ablehnen oder im Detail wählen; ohne Einwilligung ist die Werbung nicht personalisiert. Deine Wahl änderst du jederzeit unter <span class="path">Einstellungen › Datenschutz › Datenschutz bei Werbung</span> (der Eintrag ist überall da, wo das Formular gilt). Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) oder, für nicht personalisierte Werbung und Betrugsabwehr, unser berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO).</p>
+  </div>
+
+  <div class="tile">
+    <h2>Tracking auf dem iPhone</h2>
+    <p>Direkt nach dem Einwilligungsformular (oder beim ersten Start, wo es keins gibt) fragt iOS, ob Tilework dich tracken darf. Google erhält die IDFA nur, wenn du zustimmst, und jedes Rätsel spielt sich genauso, wenn nicht. Ändern kannst du das unter <span class="path">Einstellungen › Datenschutz &amp; Sicherheit › Tracking</span> in iOS. Unter Android setzt du die Werbe-ID in den Systemeinstellungen zurück oder löschst sie.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Tägliche Erinnerung</h2>
+    <p>Die Erinnerung ist eine lokale Mitteilung, die dein Handy selbst plant: kein Push-Dienst, kein Token, nichts wird gesendet. Sie ist voreingestellt an, aber das System fragt erst nach der Erlaubnis, wenn du in der App auf „Ja, erinnern“ tippst (angeboten nach einem gelösten Rätsel) oder sie in den Einstellungen einschaltest. Auf dem iPhone können frühere Erinnerungen still in der Mitteilungszentrale landen. Höchstens eine am Tag, zur Stunde deiner Wahl, keine an Tagen mit fertigem Set, und sie hören nach einer Woche auf, wenn du die App nicht öffnest. Abschalten in den Einstellungen der App oder des Systems.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Premium</h2>
+    <p>Premium ist ein einmaliger In-App-Kauf, den Apple (App Store) oder Google (Google Play) nach ihren Datenschutzregeln abwickeln. Die App erfährt nur, ob der Kauf aktiv ist, speichert das auf dem Handy und fragt beim Start erneut beim Store nach, damit eine Erstattung oder Wiederherstellung berücksichtigt wird. Zahlungsdaten sehen wir nie.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Kinder</h2>
+    <p>Tilework richtet sich nicht an Kinder unter 13 Jahren, und wir erheben wissentlich keine Daten von ihnen. Wenn du glaubst, dass ein Kind uns Daten gegeben hat, schreib uns, wir helfen.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Deine Rechte</h2>
+    <p>Nach der DSGVO hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung und Widerspruch. Wir speichern keine Daten über dich auf einem Server, es gibt also nichts herauszugeben oder zu löschen; die Daten auf deinem Handy löschst du selbst. Für Werbedaten kannst du die Einwilligung in der App widerrufen, die Werbe-ID zurücksetzen oder die Tools von Google nutzen. Außerdem kannst du dich bei einer Datenschutzaufsichtsbehörde beschweren.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Änderungen</h2>
+    <p>Eine neue Fassung dieser Erklärung erscheint auf dieser Seite mit neuem Datum. Wesentliche Änderungen erwähnen wir auch in der App oder in den Update-Hinweisen.</p>
+  </div>
+</section>
+
+<!-- ============================== ES ============================== -->
+<section class="lang" id="es" lang="es" data-title="Tilework – Política de privacidad">
+  <h1>Política de privacidad</h1>
+  <p class="date">Tilework para iPhone y Android · en vigor desde el 6 de noviembre de 2026</p>
+  <div class="glance">
+    <div class="tile"><b>Sin cuenta</b><span>Nunca nos das nombre, correo electrónico ni contraseña.</span></div>
+    <div class="tile"><b>Tu pared se queda en tu teléfono</b><span>Tableros, resultados y ajustes se guardan en el dispositivo. No tenemos servidor.</span></div>
+    <div class="tile"><b>Los anuncios son de Google</b><span>El SDK de Google Mobile Ads gestiona los anuncios y los datos que necesitan.</span></div>
+    <div class="tile"><b>Los pagos pasan por la tienda</b><span>Apple o Google procesan Premium. Nunca vemos tus datos de pago.</span></div>
+  </div>
+
+  <div class="tile">
+    <h2>Responsable</h2>
+    <p>Tilework es obra de JaworIT Daniel Jaworski, responsable del tratamiento. Para cualquier pregunta de privacidad: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Qué guarda la app en tu teléfono</h2>
+    <ul>
+      <li>los acertijos empezados: tus marcas o tu camino, el tiempo, las pistas y revisiones usadas;</li>
+      <li>los resultados de cada set diario, tu racha, estadísticas, rango e insignias;</li>
+      <li>qué acertijos del modo Jugar ya te han tocado, para que no vuelvan demasiado pronto;</li>
+      <li>ajustes: idioma, sonido, vibración, opciones del tablero, si el recordatorio está activo y a qué hora;</li>
+      <li>pequeños contadores: cuándo y cuántas veces la app ofreció el recordatorio, el último día en que terminaste un set, cuándo se mostró el último anuncio a pantalla completa;</li>
+      <li>si Premium está activo;</li>
+      <li>una copia de reserva de la partida y, si alguna vez no se puede leer, esa copia ilegible, para no perder nada.</li>
+    </ul>
+    <p>Nada de esto se envía a nosotros ni a nadie. Al borrar los datos de la app o desinstalarla, desaparece. Tilework no contiene herramientas de analítica ni de informes de fallos, y no muestra otras apps ni enlaces a ellas.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Anuncios (Google AdMob)</h2>
+    <p>La versión gratuita muestra un banner bajo el tablero, de vez en cuando un anuncio a pantalla completa al salir de un acertijo resuelto y vídeos que tú inicias para conseguir una pista, una revisión extra o salvar la racha. Los anuncios los sirve Google mediante el SDK de Google Mobile Ads. Al pedir un anuncio, el SDK puede recoger y enviar a Google:</p>
+    <ul>
+      <li>identificadores del dispositivo: el identificador de publicidad (IDFA en iPhone, solo si permites el rastreo; el ID de publicidad de Android) y el ID del conjunto de apps;</li>
+      <li>tu dirección IP y la ubicación aproximada que se deduce de ella;</li>
+      <li>interacciones con los anuncios, como visualizaciones y toques;</li>
+      <li>datos de diagnóstico y rendimiento, como tiempos de inicio y errores del SDK.</li>
+    </ul>
+    <p>Google usa estos datos para servir y medir anuncios, para analítica y para prevenir el fraude. Se cifran durante la transmisión. Más información: <a href="https://policies.google.com/technologies/partner-sites?hl=es">cómo usa Google la información de las apps de sus socios</a> y la <a href="https://policies.google.com/privacy?hl=es">Política de privacidad de Google</a>.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Tu consentimiento para los anuncios</h2>
+    <p>En el Espacio Económico Europeo, el Reino Unido y Suiza, el formulario de consentimiento de Google (UMP) aparece al abrir la app, antes de pedir ningún anuncio. Puedes aceptar anuncios personalizados, rechazarlos o elegir en detalle; sin consentimiento, los anuncios no se personalizan. Cambia tu elección cuando quieras en <span class="path">Ajustes › Privacidad › Privacidad de los anuncios</span> (la opción está allí donde se aplica el formulario). La base jurídica es tu consentimiento (art. 6.1.a RGPD) o, para anuncios no personalizados y prevención del fraude, nuestro interés legítimo (art. 6.1.f RGPD).</p>
+  </div>
+
+  <div class="tile">
+    <h2>Rastreo en iPhone</h2>
+    <p>Justo después del formulario de consentimiento (o en el primer inicio, donde no lo hay), iOS pregunta si Tilework puede rastrearte. Google recibe el IDFA solo si lo permites, y cada acertijo funciona igual si no. Puedes cambiarlo en <span class="path">Ajustes › Privacidad y seguridad › Rastreo</span> de iOS. En Android puedes restablecer o eliminar el ID de publicidad en los ajustes del sistema.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Recordatorio diario</h2>
+    <p>El recordatorio es una notificación local que programa tu propio teléfono: sin servicio push, sin token, sin enviar nada. Viene activado, pero el sistema solo pide permiso cuando tocas «Sí, avísame» en la app (se ofrece tras resolver un acertijo) o lo activas en Ajustes. En iPhone, los primeros recordatorios pueden llegar en silencio al Centro de notificaciones. Como mucho uno al día, a la hora que elijas, ninguno los días en que ya terminaste el set, y dejan de llegar tras una semana si no abres la app. Desactívalo en los Ajustes de la app o del sistema.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Premium</h2>
+    <p>Premium es una compra única dentro de la app que gestionan Apple (App Store) o Google (Google Play) con sus propias políticas de privacidad. La app solo sabe si la compra está activa, lo guarda en tu teléfono y vuelve a consultarlo a la tienda al iniciar, para reflejar un reembolso o una restauración. Nunca vemos tus datos de pago.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Menores</h2>
+    <p>Tilework no está dirigido a menores de 13 años y no recogemos sus datos a sabiendas. Si crees que un menor nos ha dado datos, escríbenos y te ayudaremos.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Tus derechos</h2>
+    <p>El RGPD te da derecho de acceso, rectificación, supresión, limitación y oposición. No guardamos datos tuyos en ningún servidor, así que no hay nada que entregar ni borrar; los datos de tu teléfono los borras tú. Para los datos publicitarios puedes retirar el consentimiento en la app, restablecer tu ID de publicidad o usar las herramientas de Google. También puedes reclamar ante una autoridad de protección de datos.</p>
+  </div>
+
+  <div class="tile">
+    <h2>Cambios</h2>
+    <p>Publicaremos cualquier nueva versión de esta política en esta página con una fecha nueva. Los cambios importantes también se mencionarán en la app o en las notas de la actualización.</p>
+  </div>
+</section>
+
+<footer>JaworIT Daniel Jaworski · <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a></footer>
+</div>
+<script>
+  // One language at a time: the #hash, else the browser language, else English. Without JS all four stay visible.
+  (function () {
+    var langs = ['en', 'pl', 'de', 'es'];
+    document.documentElement.className = 'js';
+    function show() {
+      var hash = location.hash.slice(1);
+      var pick = langs.indexOf(hash) >= 0 ? hash : (navigator.language || 'en').slice(0, 2).toLowerCase();
+      if (langs.indexOf(pick) < 0) pick = 'en';
+      langs.forEach(function (l) {
+        var section = document.getElementById(l);
+        section.hidden = l !== pick;
+        document.querySelector('nav a[href="#' + l + '"]').setAttribute('aria-current', String(l === pick));
+        if (l === pick) document.title = section.getAttribute('data-title');
+      });
+      document.documentElement.lang = pick;
+      window.scrollTo(0, 0);
+    }
+    window.addEventListener('hashchange', show);
+    show();
+  })();
+</script>
+</body>
+</html>
